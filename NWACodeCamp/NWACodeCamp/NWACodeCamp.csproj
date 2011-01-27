@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{181C7C0A-3B5E-42B4-9515-F0994EFB7725}</ProjectGuid>
+    <ProjectGuid>{9E184E20-5FDA-409D-A190-A0E6FDB9386F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Populator</RootNamespace>
-    <AssemblyName>Populator</AssemblyName>
+    <RootNamespace>NWACodeCamp</RootNamespace>
+    <AssemblyName>NWACodeCamp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -36,10 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
-      <HintPath>..\..\..\BlogPosts\DictionaryAdapterIsLove\lib\Castle.Core.dll</HintPath>
+      <HintPath>..\..\..\oz\lib\Castle\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB">
-      <HintPath>..\..\lib\MongoDBDriver\MongoDB.dll</HintPath>
+      <HintPath>..\..\..\oz\lib\MongoDBDriver\MongoDB.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,9 +51,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
